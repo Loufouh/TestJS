@@ -1,9 +1,9 @@
 'use strict';
 
 window.onload = function () {
-	let tester = new AssertTester(insertInGreenDiv, insertInRedDiv); // variadic constructor
+	let asserter = new Asserter(insertInGreenDiv, insertInRedDiv); // variadic constructor
 
-	tester.assertTrue(false);
+	asserter.assertTrue(false);
 }
 
 function insertInGreenDiv(message) {

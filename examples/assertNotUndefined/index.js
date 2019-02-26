@@ -1,9 +1,9 @@
 'use strict';
 
 window.onload = function () {
-	let tester = new AssertTester();
+	let asserter = new Asserter();
 
-	tester.assertNotUndefined(1); // No error
-	tester.assertNotUndefined(undefined); // throw error
-	tester.assertNotUndefined(undefined, 'Undefined.'); // Customized message
+	asserter.assertNotUndefined(1); // No error
+	asserter.assertNotUndefined(undefined); // throw error
+	asserter.assertNotUndefined(undefined, 'Undefined.'); // Customized message
 }

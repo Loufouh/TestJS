@@ -1,11 +1,11 @@
 'use strict';
 
 window.onload = function () {
-	let tester = new AssertTester();
+	let asserter = new Asserter();
 
-	tester.assertArrayNotSame([1, 2, 3, 4], [1, 2, 3]); // No error
-	tester.assertArrayNotSame([1, 2, 3, 4], [1, 2, 4, 3]); // No error
-	tester.assertArrayNotSame([1, 2, 3, 4], [1, 2, '4', 3]); // No error
-	tester.assertArrayNotSame([1, 2, 3, 4], [1, 2, 3, 4]); // throw error
-	tester.assertArrayNotSame([5, 4, 3, 2, 1], [5, 4, 3, 2, 1], 'The same.'); // Customized message
+	asserter.assertArrayNotSame([1, 2, 3, 4], [1, 2, 3]); // No error
+	asserter.assertArrayNotSame([1, 2, 3, 4], [1, 2, 4, 3]); // No error
+	asserter.assertArrayNotSame([1, 2, 3, 4], [1, 2, '4', 3]); // No error
+	asserter.assertArrayNotSame([1, 2, 3, 4], [1, 2, 3, 4]); // throw error
+	asserter.assertArrayNotSame([5, 4, 3, 2, 1], [5, 4, 3, 2, 1], 'The same.'); // Customized message
 }

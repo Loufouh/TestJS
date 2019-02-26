@@ -1,10 +1,10 @@
 'use strict';
 
 window.onload = function () {
-	let tester = new AssertTester();
+	let asserter = new Asserter();
 
-	tester.assertNotEquals(2, 1); // No error
-	tester.assertNotEquals('2', 1); // No error
-	tester.assertNotEquals(1, 1); // throw error
-	tester.assertNotEquals('1', 1, 'Equal.'); // Customized message
+	asserter.assertNotEquals(2, 1); // No error
+	asserter.assertNotEquals('2', 1); // No error
+	asserter.assertNotEquals(1, 1); // throw error
+	asserter.assertNotEquals('1', 1, 'Equal.'); // Customized message
 }

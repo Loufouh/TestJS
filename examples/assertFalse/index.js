@@ -1,9 +1,9 @@
 'use strict';
 
 window.onload = function () {
-	let tester = new AssertTester();
+	let asserter = new Asserter();
 
-	tester.assertFalse(false); // No error
-	tester.assertFalse(true); // throw error
-	tester.assertFalse(true, 'The value is true.'); // Customized message
+	asserter.assertFalse(false); // No error
+	asserter.assertFalse(true); // throw error
+	asserter.assertFalse(true, 'The value is true.'); // Customized message
 }

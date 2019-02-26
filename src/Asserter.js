@@ -1,6 +1,6 @@
 'use strict';
 
-class AssertTester {
+class Asserter {
 	constructor(logger) {
 		this.loggers = new Set();
 		this.addLogger(console.error);
